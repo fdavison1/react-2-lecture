@@ -2,6 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Parent from './components/Parent'
+import Blog from './components/Blog'
 
 export default class App extends React.Component {
   constructor(){
@@ -35,6 +36,8 @@ export default class App extends React.Component {
         <img src={this.state.pancakeURL}/>
         <hr/>
         <Parent/>
+        <hr></hr>
+        <Blog/>
       </div>
     );
   }
