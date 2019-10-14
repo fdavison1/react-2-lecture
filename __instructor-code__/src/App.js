@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Parent from './components/Parent'
 import Blog from './components/Blog'
+import Numbers from './components/Numbers'
 
 class App extends React.Component {
   constructor() {
@@ -37,6 +38,9 @@ class App extends React.Component {
         <hr />
         <hr />
         <Blog />
+        <hr />
+        <hr />
+        <Numbers />
       </div>
     )
   }
