@@ -7,7 +7,7 @@ export default class Blog extends Component {
         this.state = {
             posts: [
                 {
-                    title: 'wow, what a blog',
+                    title: 'Post 1',
                     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione aliquam nam eum. Tempora, nulla repellat quisquam pariatur rerum dicta mollitia. Est iusto voluptas ut obcaecati voluptatum corporis similique numquam.',
                     comments: ['I love this blog', 'some other comment', 'wowza']
                 },
@@ -25,10 +25,15 @@ export default class Blog extends Component {
         }
     }
     render(){
+        const post = this.state.posts.map(postObj => (
+        <Post 
+            postInfo={postObj} 
+            key={postObj.title}
+        />))
         return(
             <div className="blog">
                Blog {}
-               <Post />
+               {post}
             </div>
         )
     }
